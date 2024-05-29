@@ -8,9 +8,9 @@ class Restaurant(models.Model):
     imgfile_1 = models.ImageField(null=True, upload_to="", blank=True, verbose_name="이미지1")
     imgfile_2 = models.ImageField(null=True, upload_to="", blank=True, verbose_name="이미지2")
     imgfile_3 = models.ImageField(null=True, upload_to="", blank=True, verbose_name="이미지3")# 이미지 컬럼 추가
-    image_link = models.CharField(max_length=500, verbose_name="이미지 링크 목록")
+    image_link = models.CharField(max_length=500, verbose_name="이미지 링크 목록", blank=True)
     open_day = models.CharField(max_length=10, verbose_name="영업일")
-    close_day = models.CharField(max_length=10, verbose_name="휴일", default='', blank=True)
+    close_day = models.CharField(max_length=10, verbose_name="휴일", default='없음', blank=True)
     open_time = models.TimeField(verbose_name="영업 시작 시간", default='00:00')
     close_time = models.TimeField(verbose_name="영업 종료 시간", default='23:59')
     break_time = models.CharField(max_length=20, verbose_name="브레이크 타임", default='', blank=True)
@@ -24,7 +24,7 @@ class Restaurant(models.Model):
     menu_url = models.URLField(verbose_name="메뉴 URL", default='')
     latitude = models.FloatField(verbose_name="위치 위도", null=False, default='37.5445023983984')
     longitude = models.FloatField(verbose_name="위치 경도", null=False, default='127.056090471223')
-    parking_area = models.CharField(max_length=100, verbose_name="주차장소추천", default='')
+    parking_area = models.CharField(max_length=100, verbose_name="주차장소추천", default='', blank=True)
 
     def __str__(self):
         return self.title
