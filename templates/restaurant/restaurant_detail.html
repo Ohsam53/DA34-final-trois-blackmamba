@@ -42,9 +42,9 @@
         }
         h3 {
             font-family: "Jua", sans-serif;
-            font-size: 35px; /* 타이틀 크기 설정 */
-            color: #2F9D27; /* 진한 초록색 */
-            margin-bottom: 20px; /* 하단 여백 추가 */
+            font-size: 35px;
+            color: #2F9D27;
+            margin-bottom: 20px;
             display: flex;
             align-items: center;
         }
@@ -54,32 +54,32 @@
         }
         p {
             font-family: "Do Hyeon", sans-serif;
-            font-size: 35px; /* 타이틀 크기 설정 */
+            font-size: 35px;
             color: black;
         }
         .restaurant-introduction {
             font-family: "Do Hyeon", sans-serif;
-            font-size: 48px; /* 맛집 소개 글씨 크기 설정 */
-            font-weight: 500; /* 맛집 소개 글씨 굵기 설정 */
-            color: #2F9D27; /* 진한 초록색 */
+            font-size: 48px;
+            font-weight: 500;
+            color: #2F9D27;
         }
 
         .slideshow-container {
-            max-width: 100%;
+            max-width: 100%; /* 컨테이너 너비에 맞게 지정 */
             position: relative;
-            margin: auto;
+            margin: auto; /* 사진크기 여백 자동 지정*/
             text-align: center; /* 슬라이드와 버튼을 중앙에 배치 */
         }
 
         .slides {
-            display: none;
+            display: none; /* 페이지를 로드할 때 요소들이 보이지 않고 숨겨진 채로 유지 */
         }
 
         .slides img {
             width: 100%; /* 이미지 너비를 슬라이드 컨테이너에 맞춤 */
-            max-width: 700px; /* 이미지 최대 너비 설정 */
+            max-width: 700px;
             height: auto; /* 비율에 맞게 이미지 높이 자동 조절 */
-            max-height: 650px; /* 이미지 최대 높이 설정 */
+            max-height: 650px;
             border-radius: 8px; /* 이미지 모서리를 둥글게 */
             margin: auto; /* 이미지를 중앙에 배치 */
         }
@@ -88,19 +88,19 @@
             display: block;
         }
 
-        .prev, .next {
+        .prev, .next { /*슬라이드버튼*/
             cursor: pointer;
             position: absolute;
             top: 50%;
-            transform: translateY(-50%);
+            transform: translateY(-50%); /*수직으로 중앙에 위치하도록 설정*/
             width: auto;
-            padding: 16px;
+            padding: 16px; /* 안쪽여백 */
             color: white;
             font-weight: bold;
             font-size: 18px;
-            transition: 0.3s ease;
+            transition: 0.3s ease; /*전환효과 시간설정*/
             border-radius: 50%;
-            user-select: none;
+            user-select: none; /*사용자 선택을 금지*/
             background-color: rgba(0, 128, 0, 0.7); /* 초록색 배경 */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* 그림자 추가 */
         }
@@ -120,23 +120,17 @@
         }
 
         .additional-info div {
-            margin-top: 5px; /* 각 추가 정보 상단 여백 */
-            font-size: 30px; /* 추가 정보 글씨 크기 */
+            margin-top: 5px;
+            font-size: 30px;
             color: black;
         }
-        .business-day {
+        .business-day, .closing-day, .business-hours, .main-menu, .phone-number,
+         .introduction, .additional-info-title, .address {
             font-family: "Do Hyeon", sans-serif;
-            font-size: 40px; /* 맛집 소개 글씨 크기 설정 */
-            font-weight: 500; /* 맛집 소개 글씨 굵기 설정 */
-            color: #2F9D27; /* 진한 초록색 */
-            margin-top: 20px; /* 상단 여백 추가 */
-        }
-        .closing-day, .business-hours, .main-menu, .phone-number, .introduction, .additional-info-title, .address {
-            font-family: "Do Hyeon", sans-serif;
-            font-size: 40px; /* 맛집 소개 글씨 크기 설정 */
-            font-weight: 500; /* 맛집 소개 글씨 굵기 설정 */
-            color: #2F9D27; /* 진한 초록색 */
-            margin-top: 20px; /* 상단 여백 추가 */
+            font-size: 40px;
+            font-weight: 500;
+            color: #2F9D27;
+            margin-top: 20px;
         }
         ul {
             font-family: "Do Hyeon", sans-serif;
@@ -146,32 +140,32 @@
 
         li {
             list-style-type: disc; /* 점 형태로 표시 */
-            margin-left: 20px; /* 왼쪽 여백 추가 */
+            margin-left: 20px;
         }
 
         .menu-link {
             display: inline-block;
             padding: 10px 20px;
-            background-color: #2F9D27; /* 초록색 배경 */
-            color: white; /* 하얀 글씨 */
-            border-radius: 25px; /* 둥근 모서리 */
+            background-color: #2F9D27;
+            color: white;
+            border-radius: 25px;
             text-decoration: none; /* 밑줄 제거 */
             font-family: "Do Hyeon", sans-serif;
-            font-size: 30px; /* 글씨 크기 설정 */
+            font-size: 30px;
         }
         .menu-link:hover {
             background-color: #218c1e; /* 호버 시 더 진한 초록색 */
             color: yellow;
         }
         .toc-content {
-            display: none;
+            display: none; /* TOC 내용을 화면에 표시하지 않습니다. */
         }
         .toc-toggle {
             cursor: pointer;
-            color: #A36A3D;
+            color: #A36A3D; /* 토글 버튼의 색상 갈색 설정. */
         }
         .toc-toggle:hover {
-            text-decoration: none;
+            text-decoration: none; /* 토글 버튼에 마우스를 올리면 텍스트에 밑줄이 생기지 않도록 설정 */
         }
     </style>
 </head>
@@ -189,7 +183,7 @@
             </div>
             {% endfor %}
             <!-- 이전, 다음 버튼 -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a> 
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
         <h2 class="business-day"><img src="{% static 'images/open.png' %}" alt="Icon"> 영업일</h2>
@@ -214,7 +208,8 @@
         <div>
             <p>{{ restaurant.phone }}</p>
         </div>
-        <h2 class="introduction"><img src="{% static 'images/info.png' %}" alt="Icon"> 소개  (<span id="toc-toggle" onclick="openCloseToc()">펼치기</span>)</h2>
+        <h2 class="introduction"><img src="{% static 'images/info.png' %}" alt="Icon"> 소개
+            (<span id="toc-toggle" onclick="openCloseToc()">펼치기</span>)</h2>
         <div>
             <p id="toc-content">{{ restaurant.introduction }}</p>
         </div>
@@ -264,6 +259,13 @@
             slides[slideIndex].style.display = "block";
         }
 
+        document.addEventListener("DOMContentLoaded", function() {
+            let tocContent = document.getElementById("toc-content");
+            let tocToggle = document.getElementById("toc-toggle");
+            tocContent.style.display = "none"; // 페이지 로드 시 toc-content를 숨깁니다.
+            tocToggle.textContent = "펼치기"; // 페이지 로드 시 버튼 텍스트를 "펼치기"로 설정합니다.
+        });
+
         function openCloseToc() {
             let tocContent = document.getElementById("toc-content");
             let tocToggle = document.getElementById("toc-toggle");
@@ -275,6 +277,7 @@
                 tocToggle.textContent = "펼치기";
             }
         }
+
 
     </script>
     <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=ca36f7b76eda54b1703cee7a06488bf5"></script>
