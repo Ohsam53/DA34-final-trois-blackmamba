@@ -1,5 +1,4 @@
 from django import forms
-from django.forms import inlineformset_factory
 from restaurant.models import Restaurant, Menu
 
 class QuestionForm(forms.ModelForm):
@@ -24,4 +23,4 @@ class QuestionForm(forms.ModelForm):
             'longitude': forms.TextInput(attrs={'class': 'form-control'}),
             'parking_area': forms.TextInput(attrs={'class': 'form-control'})
         }
-
+            #forms.textinput - 위젯 크기 옆으로 크게 설정, rows는 원하는 줄만큼 설정
